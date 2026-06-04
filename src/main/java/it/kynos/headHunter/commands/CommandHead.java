@@ -34,7 +34,7 @@ public class CommandHead extends KynosCommand {
         return true;
     }
 
-    @SubCommand(name = "info", permission = "headhunter.player.info", playerOnly = false)
+    @SubCommand(name = "info", playerOnly = false)
     public boolean onInfo(CommandSender sender, String[] args) {
         // PLEASE KEEP MY NAME IN THE AUTHORS SECTION, CONSIDERING I RELEASED THIS FOR FREE.
         sender.sendMessage(ColorUtils.translateToString("&8&m-------------------------------------------------"));
