@@ -1,0 +1,78 @@
+# =====================================================================================
+#                               HEAD HUNTER CONFIGURATION
+# =====================================================================================
+
+Messages:
+  HeadHunter:
+    help:
+      - "&8--------------------------------------------------------"
+      - "&7"
+      - "&c&lHEAD HUNTER"
+      - "&7"
+      - "&a/headhunter givehead [quantity] &2→ &fGet custom heads to prepare the hunt"
+      - "&a/headhunter sethead &2→ &fLook at a head to register it into heads.yml"
+      - "&a/headhunter removehead &2→ &fLook at a registered head to remove it"
+      - "&a/headhunter info &2→ &fDisplay plugin and developer information"
+      - "&7"
+      - "&8--------------------------------------------------------"
+    giveheadqta: "&cError! The correct usage is: /headhunter givehead [quantity]"
+    giveheadqtaupper: "&cError! You must specify a number greater than 0!"
+    invalidvalue: "&cError! The value you entered is invalid."
+    errorload: "&cError! Failed to load the head texture from the config!"
+    headgivved: "&aYou have received the treasure head!"
+    alreadyregistered: "&cError! This head is already registered in the system!"
+    notavalidhead: "&cError! You must look at a proper head to register it!"
+    headregistered: "&a[Success] The head has been registered into heads.yml with ID: &e%id%"
+    headremoved: "&a[Success] The head has been successfully unregistered and removed!"
+    notregistered: "&cError! This head is not registered in the system."
+
+  Player:
+    alreadyfound: "&cYou have already found this head!"
+    headfound: "&a&l[Treasure Hunter] &fCongratulations! You found head &e#%id%&f!"
+    alreadyfoundall: "&cYou have already found all the hidden heads on the server!"
+    completedall: "&e&l&k!!! &6&lCONGRATULATIONS &e&l&k!!! &fYou found all &e%total% &fheads and unlocked the final reward!"
+
+    # Persistent progress tracking system displayed on the user's action bar
+    actionbar:
+      enabled: true
+      format: "&fProgress: %bar% &e%found%&7/&e%total%"
+      bar_symbol: "■"
+      completed_color: "&a"
+      remaining_color: "&7"
+
+# Custom head profile and skin configuration used during placement verification
+HeadHunters:
+  # The direct skin texture URL from the official Minecraft skin server
+  TextureURL: "http://textures.minecraft.net/texture/5e23d9c8f7afb209487201545f85fba8d3089b5caeb9bb4cf162e29c371ba95f"
+  name: "&cHeadHunters"
+  lore:
+    - "&7"
+    - "&fPlace me on a block"
+    - "&fUse /headhunter sethead to activate me"
+    - "&fFor your server event"
+
+# Reward handling dispatcher executed when a player discovers all hidden targets
+FinalReward:
+  # Reward processing modes. Supported values: "COMMAND" or "ITEM"
+  type: "ITEM"
+
+  # The console command execution string. Active only when type is set to "COMMAND"
+  # Use the %player% placeholder to target the user who completed the hunt
+  command: "give %player% diamond 64"
+
+  # Item stack builder parameters. Active only when type is set to "ITEM"
+  item:
+    # Standard Bukkit Material Enum names (must be completely capitalized)
+    material: "NETHERITE_SWORD"
+    name: "&d&lEaster Egg Hunter Sword"
+    # Custom model identifier for custom resource packs and item models
+    custom_model_data: 10502
+    lore:
+      - "&7"
+      - "&fA legendary sword awarded for"
+      - "&ffinding all the hidden Easter Eggs!"
+    # List of safe or unsafe enchantments. Formatted as "ENCHANTMENT_NAME:LEVEL"
+    enchants:
+      - "SHARPNESS:5"
+      - "UNBREAKING:3"
+      - "MENDING:1"

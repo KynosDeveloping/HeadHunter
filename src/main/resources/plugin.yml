@@ -1,0 +1,40 @@
+name: HeadHunter
+version: '${version}'
+
+main: it.kynos.headHunter.HeadHunter
+api-version: '1.21.4'
+load: POSTWORLD
+
+authors: [ Kynos ]
+website: github.com/KynosDeveloping
+
+commands:
+  headhunter:
+    description: "Main command for the HeadHunter plugin."
+    usage: /headhunter
+
+permissions:
+  headhunter.admin.*:
+    description: "Grants access to all admin commands of HeadHunter"
+    default: op
+    children:
+      headhunter.admin.reloadconfig: true
+      headhunter.admin.givehead: true
+      headhunter.admin.sethead: true
+      headhunter.admin.reloadheads: true
+
+  headhunter.admin.reloadconfig:
+    description: "Allows reloading the main config.yml file"
+    default: op
+
+  headhunter.admin.givehead:
+    description: "Allows getting the custom treasure heads"
+    default: op
+
+  headhunter.admin.sethead:
+    description: "Allows registering a new treasure head in the system"
+    default: op
+
+  headhunter.admin.reloadheads:
+    description: "Allows reloading the heads.yml file from disk"
+    default: op
