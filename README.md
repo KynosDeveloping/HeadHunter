@@ -25,7 +25,7 @@ A lightweight, highly optimized, and robust custom head-hunting plugin for Minec
 ## 🚀 Installation
 
 1. Drop `HeadHunter.jar` into your server's `plugins` folder.
-2. Ensure you have `KynosLib.jar` installed as well. *(Note: KynosLib is required and can be downloaded from its own repository [HERE](inserisci_qui_il_link_della_repository_di_kynoslib)).*
+2. Ensure you have `KynosLib.jar` installed as well. *(Note: KynosLib is required and can be downloaded from its own repository [HERE](https://github.com/KynosDeveloping/KynosLib)).*
 3. Restart the server to generate the default configuration files.
 4. Configure your custom texture URL and rewards in `config.yml`.
 5. Enjoy your hunt!
