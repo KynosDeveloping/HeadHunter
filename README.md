@@ -1,5 +1,7 @@
 # HeadHunter 🎯
 
+[DOCUMENTATION](https://kynosdeveloping.gitbook.io/kynosdeveloping/kynosheadhunter)
+
 A lightweight, highly optimized, and robust custom head-hunting plugin for Minecraft servers (Paper/Purpur 1.21+). Perfect for server events, Easter egg hunts, or seasonal activities.
 
 ## ✨ Features
