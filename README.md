@@ -17,7 +17,7 @@ A lightweight, highly optimized, and robust custom head-hunting plugin for Minec
 
 | Command | Description | Permission |
 | :--- | :--- | :--- |
-| `/headhunter info` | Displays plugin and developer information. | `headhunter.player.info` |
+| `/headhunter info` | Displays plugin and developer information. | `none` |
 | `/headhunter givehead [amount]` | Obtains the special event heads to place. | `headhunter.admin.givehead` |
 | `/headhunter sethead` | Registers the head you are looking at into the system. | `headhunter.admin.sethead` |
 | `/headhunter removehead` | Unregisters and removes the head you are looking at. | `headhunter.admin.removehead` |
